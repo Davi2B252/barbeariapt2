@@ -1,56 +1,91 @@
 <!DOCTYPE html>
 <html>
-  <head>
+ <head>
     <meta charset="UTF-8">
-    <title>Produtos</title>
-    <link rel="stylesheet" href="reset.css">
+    <title>produtos</title>
+    <link rel="stylesheet" href="resert.css">
     <link rel="stylesheet" href="contato.css">
-  </head>
-  <body>
+</head>
+<body>
     <header>
       <div class="caixa">
       <h1><img src="logo.png"></h1>
 
-      <nav>  
+      <nav>
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="produtos.html">Produtos</a></li>
-        <li><a href="contato.html">Contato</a></li>
+        <li><a href="index.html">home</a></li>
+        <li><a href="produtos.html">prudutos</a></li>
+        <li><a href="contato.html">contato</a></li>
       </ul>
       </nav>
-      </div>
+    </div>
     </header>
-    
+
     <main>
         <form>
-          <label for="nomesobrenome">Nome e sobrenome</label>
-          <input type="text" id="nomesobrenome" class="input-padrao">
-  
-          <label for="email">Email</label>
-          <input type="text" id="email" class="input-padrao">
-  
-          <label for="telefone">Telefone</label>
-          <input type="text" id="telefone" class="input-padrao">
-  
-          <label for="mensagem">mensagem</label>
-          <textarea cols="70" rows="10" id="mensagem" class="input-padrao">
-          </textarea>
+            <label for="nomesobrenome">Nome e sobrenome</label>
+            <input type="text" id="nomesobrenome" class="input-padrao" required placeholder="seuemail@dominio.com">
 
-          <div>
-            <p>Como prefere nosso contato?</p>
-          </div>
+            <label for="email">email</label>
+            <input type="email" id="email" class="input-padrao">
 
-          <div>
-            <p>Qual horário prefere ser atendido?</p>
-          </div>
-          
-          <input type="submit" value="Enviar formulário">
+            <label for="telefone">telefone</label>
+            <input type="tel" id="telefone" class="input-padrao" required placeholder="(xx) xxxxx-xxxx">
+
+            <label for="mensagem">mensagem</label>
+            <textarea cols="70" rows="10" id="mensagem" class="input-padrao">
+            </textarea>
+
+            <fieldset>
+            <P>Como prefere nosso contato</P>
+            <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">Email</label>
+
+            <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">telefone</label>
+
+            <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp">whatsapp</label>
+            </fieldset>
+
+            <fieldset>
+              <p>Qual horário prefere ser atendido</p>
+              <select>
+                <opitio>Manhã</opitio>
+                <option>Tarde</option>
+                <option>Noite</option>
+              </select>
+            </fieldset>
+
+            <label class="cheackbox"><input type="cheackbox">Gostaria de receber nossas novidades por email</label>
+            
+            <input type="submit" value="Enviar formulário" class="Enviar">
         </form>
-      </main>
 
-  <footer>
-    <img src="logo-branco.png">
-    <p class="copyright">&copy; Criado por Prof Weslly - 2025</p>
-  </footer>
-  </body>
+        <table>
+          <thead>
+            <tr>
+              <th>Dia</th>
+              <th>Horário</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Segunda</td>
+              <td>8h ~ 20h</td>
+            </tr>
+            <tr>
+              <td>Quarta</td>
+              <td>8h ~ 20h</td>
+            </tr>
+            <tr>
+              <td>Sexta</td>
+              <td>8h ~ 20h</td>
+            </tr>
+          </tbody>
+        </table>
+    </main>
+
+    <footer>
+      <img src="logo-branco.png">
+        <p class="copyright">&copy; Criado por Rafaela - 2025</p>
+    </footer>
+</body>
 </html>
