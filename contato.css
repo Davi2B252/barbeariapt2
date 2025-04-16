@@ -1,5 +1,8 @@
 @import url(produtos.css);
 
+body{
+    font-family: 'Roboto'; sans-serif;
+}
 main {
     width: 940px;
     margin: 0 auto;
@@ -29,8 +32,8 @@ form label form p {
 .enviar {
     width: 40%;
     padding: 15px 0;
-    background: rgb(133, 0, 0);
-    color: rgb(0, 0, 0);
+    background: orange;
+    color:white;
     font-weight: bold;
     font-size: 18px;
     border: none;
@@ -40,7 +43,7 @@ form label form p {
 }
 
 .enviar:hover {
-    background-color: rgb(179, 33, 33);
+    background-color: darkorange;
     transform: scale(1.2);
 }
 
